@@ -5,6 +5,7 @@ import * as pathModule from 'path';
 import { exit } from 'process';
 
 //Please write NFT storage API Access Token to "const token" variable.
+//Token Example: NFT storage
 const token = '';
 
 async function main() {
