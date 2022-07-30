@@ -13,7 +13,7 @@ async function main() {
         console.log("please set your NFT storage API token");
         return ;
     }
-    const path = "./assets";
+    const path = "./assets"; //Please paste the images to this folder.
     const files = await getFilesFromPath(path);
     
     for(var i = 0; i < files.length; i++ )
