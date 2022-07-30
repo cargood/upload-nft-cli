@@ -34,7 +34,8 @@ async function main() {
     console.log({ cid })
 
     const status = await storage.status(cid)
-    console.log(status)
+    console.log("Status:", status)
+    console.log("CID : ",{cid});
 }
 
 main()
