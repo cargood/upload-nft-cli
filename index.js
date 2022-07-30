@@ -14,6 +14,7 @@ async function main() {
         console.log("please set your NFT storage API token");
         return ;
     }
+
     const path = "./assets"; //Please paste the images to this folder.
     const files = await getFilesFromPath(path);
     
@@ -25,8 +26,9 @@ async function main() {
     console.log(`storing ${files.length} file(s) from ${path}`)
     
     const cid = await storage.storeDirectory(files, {
+
         pathPrefix: path, // see the note about pathPrefix below
-        hidden: true
+        hidden: true //hidden property
     })
 
     console.log({ cid })
